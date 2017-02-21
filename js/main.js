@@ -3,7 +3,7 @@ $(document).ready(function(){
 			$('#read').html(data);
 			//alert(data);
 			//$('#read').load(data);
-			document.getElementById("reader").innerHTML='<object type="text/html" data="'+data+'" ></object>';
+			$("#reader").html('<object type="text/html" data="'+data+'" ></object>');
 		},
 		function(error){
 			$('#read_error').html(error);
